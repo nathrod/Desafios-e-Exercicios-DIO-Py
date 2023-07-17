@@ -89,7 +89,8 @@ def ContaBancaria():
         contas.append(user)
 
     print("\nContas cadastradas: \n")
-    print(contas)
+    for lista in contas:
+        print(lista)
 
 def ConsultarUsuarios():
     global cadastro
@@ -154,7 +155,6 @@ def Menu():
                     saldo_atualizado,extrato_atualizado = Deposito(saldo, valor_deposito,extrato)
                     lista[3] = saldo_atualizado
                     lista[5] = extrato_atualizado
-            print(contas)
         elif opcao==2:
             print("\nSAQUE")
             print("Limite Diário de 3 Saques. Valor da operação não deve ultrapassar R$ 500.00\n")
@@ -169,7 +169,6 @@ def Menu():
                     lista[3] = saldo_atualizado
                     lista[4] = qntd_atualizada
                     lista[5] = extrato_atualizado
-            print(contas)
         elif opcao==3:
             cpf = int(input("CPF (11 digitos): "))
             saldo,qntd,extrato = SelecionarConta(cpf)
