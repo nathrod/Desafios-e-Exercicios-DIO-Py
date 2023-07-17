@@ -1,8 +1,8 @@
 import sys
 
-usuarios = [46030810812]
-cadastro = {46030810812: [['Nathalia Rodrigues', '18/10/1999', 'Rua José do Nascimento, 309 - Jardim São Paulo- Itapiri/SP']]}
-contas = [[46030810812,1,"0001",0,0,[]],[30820840898,2,"0001",200,0,[]],[46030810812,3,"0001",650,0,[]]] 
+usuarios = [12345678910,30820840898]
+cadastro = {12345678910: [['Ana Rodrigues', '18/10/1999', 'Rua José do Nascimento, 309 - Jardim São Paulo - Itapiri/SP']],30820840898: [['Ricardo Gomes', '02/07/1975', 'Rua das Flores, 71 - Cidade Nova - Itapiri/SP']]}
+contas = [[12345678910,1,"0001",0,0,[]],[30820840898,2,"0001",200,0,[]],[12345678910,3,"0001",650,0,[]]] 
 #         [cpf, número da conta, agência, saldo,saques_realizados,extrato=[]]
 
 def Deposito(saldo, valor_deposito,extrato):
